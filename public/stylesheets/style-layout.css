@@ -1,8 +1,8 @@
-body{
+body {
   background-color: rgb(255, 228, 196);
 }
 
-.main-body{
+.main-body {
   max-width: 1200px;
   margin: auto;
   background-color: white;
@@ -11,6 +11,7 @@ body{
 }
 
 .navbar5 {
+  z-index: 3;
   overflow: hidden;
   background-color: rgba(0, 0, 255, 0.623);
 }
@@ -26,11 +27,12 @@ body{
 
 .dropdown5 {
   float: left;
+  z-index: 4;
   overflow: hidden;
 }
 
 .dropdown5 .dropbtn {
-  font-size: 16px;  
+  font-size: 16px;
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
@@ -38,14 +40,18 @@ body{
   background-color: inherit;
   cursor: pointer;
   font-family: inherit;
+  z-index: 4;
   margin: 0;
 }
 
-.navbar5 a:hover, .dropdown5:hover .dropbtn {
+.navbar5 a:hover,
+.dropdown5:hover .dropbtn {
   background-color: rgba(184, 168, 168, 0.712);
   transition: 1s;
 }
-.navbar5 a:not(:hover), .dropdown5:not(:hover) .dropbtn {
+
+.navbar5 a:not(:hover),
+.dropdown5:not(:hover) .dropbtn {
   transition: 1s;
 }
 
@@ -55,7 +61,7 @@ body{
   top: 30px;
   background-color: rgb(0, 0, 255);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
 
@@ -79,17 +85,18 @@ body{
 }
 
 .dropbtn:not(:hover) .dropdown-content {
-  transition: display none,800ms, ease;
+  transition: display none, 800ms, ease;
 }
 
-.green_area{
+.green_area {
   background-color: rgb(0, 128, 0);
 }
 
-.navbar5 .green_area:hover{
+.navbar5 .green_area:hover {
   background-color: rgb(0, 128, 0);
 }
-.navbar6{
+
+.navbar6 {
   background-color: rgba(0, 0, 255, 0.623);
   overflow: hidden;
   margin: auto;
@@ -97,8 +104,9 @@ body{
   display: none;
   width: 100%;
 }
-.navbar6 a{
-  font-size: 16px;  
+
+.navbar6 a {
+  font-size: 16px;
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
@@ -108,8 +116,9 @@ body{
   width: 100%;
   margin: 0;
 }
-.dropbtn2{
-  font-size: 16px;  
+
+.dropbtn2 {
+  font-size: 16px;
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
@@ -123,62 +132,131 @@ body{
   border-top: 2px solid red;
 }
 
-.dropbtn2:focus{
+.dropbtn2:focus {
   outline: none;
 }
-.dropdown-content2{
+
+.dropdown-content2 {
   display: none;
   position: relative;
   height: auto;
   background-color: rgba(31, 31, 100, 0.623);
 }
-.dropdown-content2 a{
+
+.dropdown-content2 a {
   display: block;
   border-top: 2px dotted white;
   border-bottom: 2px dotted white;
 }
 
-@keyframes rotateArrowUp{
-  from{
+@keyframes rotateArrowUp {
+  from {
     transform: rotate(0deg);
-  }to{
+  }
+
+  to {
     transform: rotate(180deg);
   }
 }
 
-@keyframes rotateArrowDown{
-  from{
+@keyframes rotateArrowDown {
+  from {
     transform: rotate(180deg);
-  }to{
+  }
+
+  to {
     transform: rotate(0deg);
   }
 }
 
-.transitionUp{
+.transitionUp {
   animation-name: rotateArrowUp;
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-.transitionDown{
+.transitionDown {
   animation-name: rotateArrowDown;
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-@media only screen and (max-width:780px){
-  .navbar6{
+@media only screen and (max-width:780px) {
+  .navbar6 {
     display: block;
   }
-  .navbar5{
+
+  .navbar5 {
     display: none;
   }
 }
 
-.site-title{
+.site-title {
   color: blue;
   text-align: center;
   background-color: white;
+}
+
+.card {
+  min-height: 400px;
+  max-height: 600px;
+  display: inline-block;
+  width: 42%;
+  margin: 30px 10px 30px 30px;
+  border: none;
+}
+
+.card img {
+  width: 100%;
+  max-width: 280px;
+  max-height: 210px;
+}
+
+.text_below_image {
+  max-width: 280px;
+}
+.circle_box{
+  display: block;
+  background-color: green;
+  color: white;
+  font-weight: bolder;
+  border-radius: 9999px;
+  text-align: center;
+  font-size: xx-large;
+  margin: 30px auto;
+}
+
+.recent_list li{
+  list-style-image: url(/images/rocket.png);
+}
+
+.sponsor_images img{
+  display: inline-block;
+  margin: 5px 5px;
+}
+
+.archive_list li{
+  list-style: none;
+  padding-bottom: 5px;
+}
+.more_posts{
+  display: block;
+  background-color: green;
+  color: white;
+  margin: 30px auto;
+  text-align: center;
+  height: 50px;
+  font-size: xx-large;
+  cursor: pointer;
+}
+footer{
+  background-color: grey;
+  color: white;
+  display: block;
+  margin-top: 20px;
+}
+footer a{
+  color: white;
 }
