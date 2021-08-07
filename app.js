@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const expressLayouts = require('express-ejs-layouts')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -19,6 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(expressLayouts)
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
@@ -39,3 +41,13 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+// Set custom layout for single render
+// app.get('/', function(req, res) {
+//   res.render('the-view', { layout: 'specific-layout' });
+// });
+
+// Set no layout for single render
+// app.get('/', function(req, res) {
+//   res.render('the-view', { layout: false });
+// );
