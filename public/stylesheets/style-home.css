@@ -1,3 +1,11 @@
 .page-image img{
   width: 100%;
 }
+
+#home_cluster_2{
+  display: none;
+}
+
+#home_cluster_3{
+  display: none;
+}
