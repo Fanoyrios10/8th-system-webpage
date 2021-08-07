@@ -275,3 +275,18 @@ footer{
 footer a{
   color: white;
 }
+#GoToTop {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  z-index: 20;
+  font-size: 40px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 128, 0, 0.658);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
