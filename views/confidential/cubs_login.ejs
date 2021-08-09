@@ -1,0 +1,52 @@
+<style>
+  .login-form {
+    width: 400px;
+    margin: 0 auto;
+    font-family: Tahoma, Geneva, sans-serif;
+  }
+
+  .login-form h1 {
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+  }
+
+  .login-form input[type="password"],
+  .login-form input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  .login-form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #535b63;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+  }
+</style>
+<div class="page-image">
+  <img src="/images/confidential/keys.jpg" alt="εικόνα με προσκοπικό μαντήλι"
+    style="border-bottom: 7px solid rgb(61, 61, 61);">
+</div>
+<h3 style="text-align: center; border-bottom: 7px solid green; padding-bottom: 20px; margin-top: 20px;">Εμπιστευτικά Αγέλης</h3>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="login-form">
+        <h2>Βάλε το σωστό σύνθημα:</h2>
+        <form action="authorization_cub" method="POST">
+          <input type="hidden" name="username" value="Λυκόπουλα">
+          <input type="password" name="password" placeholder="Βάλε το σύνθημά σου εδώ" required>
+          <input type="submit" value="Είσοδος">
+          <img src="<%=img%>" alt="<%=alt%>" style="margin: auto; text-align: center; display: block;">
+        </form>
+      </div>
+    </div>

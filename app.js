@@ -1,15 +1,25 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
+var session = require('express-session');
 var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
 var logger = require('morgan');
 const expressLayouts = require('express-ejs-layouts')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var usefullRouter = require('./routes/usefull');
+var confidentialRouter = require('./routes/confidential');
 
 var app = express();
-
+app.use(session({
+	secret: 'secret',
+	resave: true,
+	saveUninitialized: true
+}));
+app.use(bodyParser.urlencoded({extended : true}));
+app.use(bodyParser.json());
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -22,7 +32,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(expressLayouts)
 app.use('/', indexRouter);
+app.use('/usefull', usefullRouter);
 app.use('/users', usersRouter);
+app.use('/confidential', confidentialRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
