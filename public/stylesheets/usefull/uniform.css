@@ -1,0 +1,10 @@
+.uniform_article{
+  padding: 20px;
+  text-align: center;
+}
+
+.uniform_article a img{
+  width: 45%;
+  margin: 2%;
+  display: inline-block;
+}

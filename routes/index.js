@@ -5,7 +5,12 @@ var dbconnection = require('../lib/db');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index');
+});
+
+/* GET Uniform page. */
+router.get('/uniform', function(req, res, next) {
+  res.render('usefull/uniform');
 });
 
 module.exports = router;
