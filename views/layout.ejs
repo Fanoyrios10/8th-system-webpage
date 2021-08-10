@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="el">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +8,16 @@
     <%/* <meta name="robots" content="noindex"> */%>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="shortcut icon" href="/images/8th_system_logo_small.png" type="image/x-icon">
+    <!-- Dependencies begin -->
     <script src="https://kit.fontawesome.com/cc178605cc.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>
-    <!-- Stylesheets begin -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Dependencies end -->
+    <!-- Stylesheets begin -->
     <link rel="stylesheet" href="/stylesheets/dependencies/animate.min.css">
     <link rel="stylesheet" href="/stylesheets/dependencies/fontawesome.css">
     <link rel="stylesheet" href="/stylesheets/style-layout.css">
@@ -25,6 +26,10 @@
     <link rel="stylesheet" href="/stylesheets/confidential/style-login.css">
     <link rel="stylesheet" href="/stylesheets/privacy/style-privacy.css">
     <!-- Stylesheets end -->
+    <!-- Scripts Begin -->
+    <script src="javascripts/index.js" defer></script>
+    <script src="javascripts/layout.js" defer></script>
+    <!-- Scripts End -->
   </head>
 
   <body>
@@ -78,10 +83,14 @@
           <div class="dropdown-content animate__animated animate__zoomIn animate__faster">
             <a href="#" class="animate__animated animate__bounceInLeft">Ανακοινώσεις</a>
             <a href="/usefull/uniform" class="animate__animated animate__bounceInLeft">Στολή</a>
-            <a href="/docs/DeltioYgeiasProskopou.pdf" target="_blank" class="animate__animated animate__bounceInLeft">Δελτίο Υγείας</a>
-            <a href="/docs/AitisiEgrafisNeoyMeloys.pdf" target="_blank" class="animate__animated animate__bounceInLeft">Αίτηση Εγγραφής Νέου Μέλους</a>
-            <a href="https://www.sep.org.gr/el/normal/home" target="_blank" class="animate__animated animate__bounceInLeft">Σ.Ε.Π.</a>
-            <a href="https://www.scout-shop.gr/" target="_blank" class="animate__animated animate__bounceInLeft">Προσκοπικό Πρατήριο</a>
+            <a href="/docs/DeltioYgeiasProskopou.pdf" target="_blank"
+              class="animate__animated animate__bounceInLeft">Δελτίο Υγείας</a>
+            <a href="/docs/AitisiEgrafisNeoyMeloys.pdf" target="_blank"
+              class="animate__animated animate__bounceInLeft">Αίτηση Εγγραφής Νέου Μέλους</a>
+            <a href="https://www.sep.org.gr/el/normal/home" target="_blank"
+              class="animate__animated animate__bounceInLeft">Σ.Ε.Π.</a>
+            <a href="https://www.scout-shop.gr/" target="_blank"
+              class="animate__animated animate__bounceInLeft">Προσκοπικό Πρατήριο</a>
           </div>
         </div>
         <div class="dropdown5">
@@ -144,10 +153,14 @@
           <div class="dropdown-content2">
             <a href="#" class="animate__animated animate__bounceInLeft">Ανακοινώσεις</a>
             <a href="/usefull/uniform" class="animate__animated animate__bounceInLeft">Στολή</a>
-            <a href="/docs/DeltioYgeiasProskopou.pdf" target="_blank" class="animate__animated animate__bounceInLeft">Δελτίο Υγείας</a>
-            <a href="/docs/AitisiEgrafisNeoyMeloys.pdf" target="_blank" class="animate__animated animate__bounceInLeft">Αίτηση Εγγραφής Νέου Μέλους</a>
-            <a href="https://www.sep.org.gr/el/normal/home" target="_blank" class="animate__animated animate__bounceInLeft">Σ.Ε.Π.</a>
-            <a href="https://www.scout-shop.gr/" target="_blank" class="animate__animated animate__bounceInLeft">Προσκοπικό Πρατήριο</a>
+            <a href="/docs/DeltioYgeiasProskopou.pdf" target="_blank"
+              class="animate__animated animate__bounceInLeft">Δελτίο Υγείας</a>
+            <a href="/docs/AitisiEgrafisNeoyMeloys.pdf" target="_blank"
+              class="animate__animated animate__bounceInLeft">Αίτηση Εγγραφής Νέου Μέλους</a>
+            <a href="https://www.sep.org.gr/el/normal/home" target="_blank"
+              class="animate__animated animate__bounceInLeft">Σ.Ε.Π.</a>
+            <a href="https://www.scout-shop.gr/" target="_blank"
+              class="animate__animated animate__bounceInLeft">Προσκοπικό Πρατήριο</a>
           </div>
         </div>
         <div>
@@ -169,8 +182,9 @@
       <h1 class="site-title">8<sup>ο</sup> Σύστημα Αεροπροσκόπων Χίου</h1>
       <button id="GoToTop" title="Σκρόλαρε στην αρχή!">&#8657;</button>
       <%- body %>
-      <div class="col-md-4 order-1 order-md-1"><iframe width="100%" height="230" src="https://www.youtube.com/embed/t62kt1KNtIo"
-          title="YouTube video player" frameborder="0"
+      <div class="col-md-4 order-1 order-md-1 second_column">
+        <iframe width="100%" height="230"
+          src="https://www.youtube.com/embed/t62kt1KNtIo" title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen style="margin: 30px auto;"></iframe>
         <p><span style="position: relative; top: -8px;">Ακολουθήστε μας:</span> <a
@@ -235,32 +249,25 @@
     </div>
     </div>
     <footer>
-      <p>© 2021 - 8<sup>ο</sup> Σύστημα Αεροπροσκόπων Χίου | <a href="/privacy/terms_of_use">Όροι Χρήσης</a> | <a href="/privacy/personal_data">Προσωπικά
+      <p>© 2021 - 8<sup>ο</sup> Σύστημα Αεροπροσκόπων Χίου | <a href="/privacy/terms_of_use">Όροι Χρήσης</a> | <a
+          href="/privacy/personal_data">Προσωπικά
           Δεδομένα</a></p>
     </footer>
     </div>
-    <!-- Scripts Begin -->
-    <script src="javascripts/dependencies/jquery.min.js"></script>
-    <script src="javascripts/index.js"></script>
-    <script src="javascripts/layout.js"></script>
-    <!-- Scripts End -->
-<!-- Default Statcounter code for 8th scout group web site
+    <!-- Default Statcounter code for 8th scout group web site
 https://eighth-scout-group-chios.herokuapp.com/ -->
-<script type="text/javascript">
-  var sc_project=12577151; 
-  var sc_invisible=1; 
-  var sc_security="aadd7606"; 
-  </script>
-  <script type="text/javascript"
-  src="https://www.statcounter.com/counter/counter.js"
-  async></script>
-  <noscript><div class="statcounter"><a title="Web Analytics"
-  href="https://statcounter.com/" target="_blank"><img
-  class="statcounter"
-  src="https://c.statcounter.com/12577151/0/aadd7606/1/"
-  alt="Web Analytics"
-  referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-  <!-- End of Statcounter Code -->
+    <script type="text/javascript">
+      var sc_project = 12577151;
+      var sc_invisible = 1;
+      var sc_security = "aadd7606";
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript>
+      <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+            class="statcounter" src="https://c.statcounter.com/12577151/0/aadd7606/1/" alt="Web Analytics"
+            referrerPolicy="no-referrer-when-downgrade"></a></div>
+    </noscript>
+    <!-- End of Statcounter Code -->
   </body>
 
 </html>

@@ -183,6 +183,12 @@ body {
   animation-fill-mode: forwards;
 }
 
+.second_column{
+  border-right: 7px solid green;
+  margin-top: -8px;
+  margin-bottom: -20px;
+}
+
 @media only screen and (max-width:780px) {
   .navbar6 {
     display: block;
@@ -190,6 +196,14 @@ body {
 
   .navbar5 {
     display: none;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .second_column {
+    border-right: none;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
@@ -250,6 +264,11 @@ body {
 .sponsor_images img{
   display: inline-block;
   margin: 5px 5px;
+}
+
+.archive_list{
+  border-bottom: 7px solid green;
+  margin: auto -12px;
 }
 
 .archive_list li{
