@@ -1,0 +1,7 @@
+.comment_section_cubs{
+  border: 5px solid yellow;
+}
+
+.comment_section_cubs_comment{
+  border-bottom: 5px dotted yellow;
+}
