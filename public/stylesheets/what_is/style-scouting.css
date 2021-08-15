@@ -26,3 +26,67 @@ blockquote:hover{
   margin-top: 25px;
   text-align: center;
 }
+
+.right_side_departments_cubs{
+  background-color: yellow;
+  color: black;
+  overflow-y: auto;
+  height: 430px;
+  padding: 20px;
+}
+
+.left_side_departments_cubs{
+  border: yellow 5px solid;
+  height: 430px;
+}
+
+.two_side_stripe_departments_scouts{
+  margin-top: 450px;
+}
+
+.left_side_departments_scouts{
+  background-color: green;
+  color: white;
+  overflow-y: auto;
+  height: 430px;
+  padding: 20px;
+}
+
+.right_side_departments_scouts{
+  border: green 5px solid;
+  height: 430px;
+}
+
+.two_side_stripe_departments_explorers{
+  margin-top: 900px;
+}
+
+.right_side_departments_explorers{
+  background-color: red;
+  color: white;
+  overflow-y: auto;
+  height: 580px;
+  padding: 20px;
+}
+
+.left_side_departments_explorers{
+  border: red 5px solid;
+  height: 580px;
+}
+
+.two_side_stripe_departments_network{
+  margin-top: 1500px;
+}
+
+.left_side_departments_network{
+  background-color: blue;
+  color: white;
+  overflow-y: auto;
+  height: 520px;
+  padding: 20px;
+}
+
+.right_side_departments_network{
+  border: blue 5px solid;
+  height: 520px;
+}
