@@ -2,6 +2,7 @@ const homeMorePosts = document.getElementById('more_posts_home')
 const homeCluster2 = document.getElementById('home_cluster_2')
 const homeCluster3 = document.getElementById('home_cluster_3')
 let homeMorePostsCounter = 0;
+if(homeMorePosts){
 homeMorePosts.addEventListener("click", function(){
   homeMorePostsCounter++;
   switch (homeMorePostsCounter) {
@@ -16,4 +17,4 @@ homeMorePosts.addEventListener("click", function(){
       break;
   }
 })
-
+}

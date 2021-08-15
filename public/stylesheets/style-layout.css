@@ -186,6 +186,13 @@ body {
   animation-fill-mode: forwards;
 }
 
+.title_page{
+  text-align: center;
+  border-bottom: 7px solid green;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
 .second_column{
   border-right: 7px solid green;
   margin-top: -8px;
@@ -205,6 +212,7 @@ body {
 @media only screen and (max-width:767px) {
   .second_column {
     border-right: none;
+    border-top: 7px solid green;
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -260,8 +268,12 @@ body {
   margin: 30px auto;
 }
 
+.recent_list{
+  margin-left: -13px;
+}
+
 .recent_list li{
-  list-style-image: url(/images/rocket.png);
+  list-style: none;
 }
 
 .sponsor_images img{

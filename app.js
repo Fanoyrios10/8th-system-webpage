@@ -13,6 +13,7 @@ var usefullRouter = require('./routes/usefull');
 var confidentialRouter = require('./routes/confidential');
 var privacyRouter = require('./routes/privacy')
 var articlesCubsRouter = require('./routes/articles_cubs')
+var whatIsRouter = require('./routes/what_is')
 
 var app = express();
 app.use(session({
@@ -39,6 +40,7 @@ app.use('/users', usersRouter);
 app.use('/confidential', confidentialRouter);
 app.use('/privacy', privacyRouter);
 app.use('/articles/cubs', articlesCubsRouter);
+app.use('/what-is', whatIsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

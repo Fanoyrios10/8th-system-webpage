@@ -1,0 +1,28 @@
+blockquote:before{
+  height: 0;
+  content: "“";
+  display: block;
+  font: italic 400%/1 Cochin,Georgia,"Times New Roman", serif;
+  color: #999999;
+}
+
+blockquote{
+  border-left: 8px solid rgb(221, 221, 221);
+  padding: 5px 0;
+}
+
+blockquote:hover{
+  box-shadow: 2px 2px 2px 2px gray;
+}
+
+.quote_after{
+  position: absolute;
+  font: italic 400%/1 Cochin,Georgia,"Times New Roman", serif;
+  display: inline;
+  color: #999999;
+}
+
+.departments_article{
+  margin-top: 25px;
+  text-align: center;
+}
