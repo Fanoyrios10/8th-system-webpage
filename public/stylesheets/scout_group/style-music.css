@@ -1,0 +1,16 @@
+.scout_group_music_article{
+  padding-top: 30px;
+  text-align: left;
+}
+
+.summary_song_title_cubs{
+  font-weight: bolder;
+  display: inline-block;
+  font-size: larger;
+  color: rgb(182, 182, 36);
+}
+
+.song_lyrics{
+  font-family: Segoe Script;
+  margin-left: 35px;
+}

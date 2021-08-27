@@ -1,0 +1,16 @@
+.scout_group_members_article{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.grid_container_two_column_scout_group_members{
+  background-color: white;
+}
+
+.grid_item_two_column_scout_group_members{
+  border: none;
+}
+.grid_item_two_column_scout_group_members img{
+  width: 220px;
+  height: 220px;
+}
