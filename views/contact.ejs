@@ -1,0 +1,136 @@
+<div class="page-image">
+  <img src="/images/uniform/handkerchief.jpg" alt="εικόνα με προσκοπικό μαντήλι"
+    style="border-bottom: 7px solid rgb(61, 61, 61);">
+</div>
+<h2 class="title_page">Επικοινωνία</h2>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 order-1 order-md-2">
+      <article class="contact_article">
+        <hr>
+        <h4><i class="fas fa-map-marked-alt"></i> Διεύθυνση Λέσχης:</h4>
+        <p>
+          Δωροθέου Πρωίου 19, 82100 Χίος (1ος όροφος)
+        </p>
+        <div class="mapouter">
+          <div class="gmap_canvas"><iframe width="100%" height="669" id="gmap_canvas"
+              src="https://maps.google.com/maps?q=38.36715539125555,%2026.13699186473887&t=k&z=19&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+              href="https://yt2.org">yt2</a><br>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 669px;
+                width: 100%;
+              }
+            </style><a href="https://www.embedgooglemap.net">adding google map to website</a>
+            <style>
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 669px;
+                width: 100%;
+              }
+            </style>
+          </div>
+        </div>
+        <hr>
+        <h4><i class="fas fa-at"></i> Ηλεκτρονικό Ταχυδρομείο Συστήματος:</h4>
+        <a href="mailto:sap.1841@sep.org.gr">sap.1841@sep.org.gr</a>
+        <hr>
+        <h4><i class="far fa-address-book"></i> Τηλέφωνα & e-mail επικοινωνίας:</h4>
+        <div class="left_side_contact">
+          <p>
+            <strong>Αρχηγός Συστήματος:</strong>
+          </p>
+          <p>
+            <strong>Αρχηγός Αγέλης: </strong>
+          </p>
+          <p>
+            <strong>Αρχηγός Ομάδας: </strong>
+          </p>
+          <p>
+            <strong>Πρόεδρος Ε.Κ.Σ.: </strong>
+          </p>
+        </div>
+        <div class="right_side_contact">
+          <p>
+            <strong>Χρήστος Μέλιος </strong>| Τηλέφωνο | προσωπικό email
+          </p>
+          <p>
+            <strong>Ρίκα Φαράκλα </strong>| Τηλέφωνο | προσωπικό email
+          </p>
+          <p>
+            <strong>Μιχάλης Ξενάκης </strong>| Τηλέφωνο | προσωπικό email
+          </p>
+          <p>
+            <strong>___________ </strong>| Τηλέφωνο | προσωπικό email
+          </p>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <h3><i class="far fa-calendar-alt"></i> Ημέρες και ώρες συγκεντρώσεων:</h3>
+        <div class="left_side_contact">
+          <p>
+            <strong>Αγέλη Λυκοπούλων:</strong>
+          </p>
+          <p>
+            <strong>Ομάδα Προσκόπων: </strong>
+          </p>
+        </div>
+        <div class="right_side_contact">
+          <p>
+            κάθε Σάββατο, 15:45 - 17:30 στην Λέσχη
+          </p>
+          <p>
+            κάθε Σάββατο, 17:30 - 19:30 στην Λέσχη
+          </p>
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <h3><i class="fas fa-mail-bulk"></i> Φόρμα επικοινωνίας:</h3>
+        <form action="contact/contact_send" method="post" id="contact_feedback">
+          <label for="contact_name">Το Όνομα σας: <br>
+            <input type="text" name="contact_name" id="contact_name"><br>
+          </label>
+          <label for="contact_email">
+            Το E-mail σας: <br>
+            <input type="email" name="contact_email" id="contact_email"><br>
+          </label>
+          <label for="contact_subject">
+            Θέμα: <br>
+            <input type="text" name="contact_subject" id="contact_subject"><br>
+          </label>
+          <label for="contact_message">
+            Το μήνυμα σας: <br>
+            <textarea name="contact_message" id="contact_message" cols="30" rows="10"></textarea><br>
+          </label>
+          <input type="hidden" name="contact_alert" id="contact_alert" value="<%=contactAlertNumber%>">
+          <input type="submit" value="Στείλτε το μήνυμα σας" id="contact_submit">
+        </form>
+      </article>
+    </div>
+    <script>
+      let contactAlert = document.getElementById('contact_alert');
+      console.log(contactAlert.value)
+      if (contactAlert.value == 1) {
+        alert('Το μήνυμα διστυχώς δεν εστάλθη.')
+      } else if (contactAlert.value == 2) {
+        alert('Το μήνυμα εστάλθη με επιτυχία.')
+      } else {
+        console.log('Nothing yet')
+      }
+    </script>

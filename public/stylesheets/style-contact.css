@@ -1,0 +1,17 @@
+.contact_article{
+  padding-top: 25px;
+}
+
+.left_side_contact{
+  float: left;
+  width: 35%;
+}
+
+.right_side_contact{
+  float: right;
+  width: 65%;
+}
+
+#contact_feedback > *{
+  display: block;
+}

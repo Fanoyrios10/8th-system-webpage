@@ -9,6 +9,24 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-8 order-2 order-md-2">
+      <form method="post" id="contact_feedback">
+        <label for="contact_name">Το Όνομα σας: <br>
+          <input type="text" name="contact_name" id="contact_name"><br>
+        </label>
+        <label for="contact_email">
+          Το E-mail σας: <br>
+          <input type="email" name="contact_email" id="contact_email"><br>
+        </label>
+        <label for="contact_subject">
+          Θέμα: <br>
+          <input type="text" name="contact_subject" id="contact_subject"><br>
+        </label>
+        <label for="contact_message">
+          Το μήνυμα σας: <br>
+          <textarea name="contact_message" id="contact_message" cols="30" rows="10"></textarea><br>
+        </label>
+        <input type="submit" value="Στείλτε το μήνυμα σας" id="contact_submit">
+      </form>
       <div class="two_side_colour_stripe_home">
         <span class="left_side_home">
           <a href="/what-is/scouting"><h3>Προσκοπισμός</h3></a>

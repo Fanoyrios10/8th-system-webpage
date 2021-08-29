@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var dbconnection = require('../lib/db');
 
 /* GET Uniform page. */
 router.get('/terms_of_use', function(req, res, next) {
