@@ -17,6 +17,7 @@ var whatIsRouter = require('./routes/what_is')
 var registerRouter = require('./routes/register')
 var scoutGroupRouter = require('./routes/scout_group')
 var contactRouter = require('./routes/contact')
+var faqRouter = require('./routes/faq')
 
 var app = express();
 app.use(session({
@@ -47,6 +48,7 @@ app.use('/what-is', whatIsRouter);
 app.use('/register', registerRouter)
 app.use('/scout-group', scoutGroupRouter)
 app.use('/contact', contactRouter)
+app.use('/faq', faqRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

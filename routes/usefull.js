@@ -6,4 +6,9 @@ router.get('/uniform', function(req, res, next) {
   res.render('usefull/uniform');
 });
 
+/* GET Music page. */
+router.get('/music', function(req, res, next) {
+  res.render('usefull/music');
+});
+
 module.exports = router;

@@ -1,0 +1,34 @@
+.faq-question{
+  min-height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  color: white;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.faq-question > span{
+  text-align: center;
+}
+.faq-answer{
+  min-height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  color: white;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.faq-answer > span{
+  text-align: center;
+}
+.faq-answer > span > a{
+  color: white;
+}
+.faq-answer > span > ul > li{
+  text-align: left;
+}
