@@ -4,6 +4,11 @@ var router = express.Router();
 var dbconnection = require('../lib/db');
 const Comment = require('../models/comment')
 
+router.get('/', function(req, res, next) {
+  res.render('articles/cubs/home');
+});
+
+
 router.get('/habet', function (req, res, next) {
   const query = 'SELECT * FROM cubs_articles_comments WHERE article_id = 1';
   dbconnection.query(query, function (err, rows) {
