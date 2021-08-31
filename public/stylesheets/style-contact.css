@@ -15,3 +15,13 @@
 #contact_feedback > *{
   display: block;
 }
+
+@media only screen and (max-width:1050px) {
+  .right_side_contact > * {
+    font-size: 11px;
+  }
+
+  .left_side_contact > * {
+    font-size: 11px;
+  }
+}
