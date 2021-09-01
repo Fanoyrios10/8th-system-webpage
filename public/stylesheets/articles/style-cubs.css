@@ -58,3 +58,7 @@
 .grid_container_two_column_article_cubs{
   background-color: rgb(189, 189, 14);
 }
+
+#articles_cubs > div{
+  display: none;
+}
