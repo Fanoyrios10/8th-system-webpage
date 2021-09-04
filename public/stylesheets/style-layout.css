@@ -32,7 +32,7 @@ body {
   z-index: 3;
   overflow: hidden;
   border-radius: 25px 25px 0 0;
-  background-color: rgb(0, 0, 255);
+  background-color: rgb(60, 63, 121);
 }
 
 .navbar5 a {
@@ -84,10 +84,24 @@ body {
   position: absolute;
   line-height: normal;
   top: 55px;
-  background-color: rgb(0, 0, 255);
+  background-color: rgb(60, 63, 121);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 2;
+}
+
+.dark-light_mode_button{
+  float: right;
+  height: 60px;
+  width: 35px;
+  background-color: green;
+}
+
+.show_side_nav{
+  float: right;
+  height: 60px;
+  width: 35px;
+  background-color: red;
 }
 
 .dropdown-content a {
@@ -123,7 +137,7 @@ body {
 }
 
 .navbar6 {
-  background-color: rgba(0, 0, 255, 0.623);
+  background-color: rgb(60, 63, 121);
   overflow: hidden;
   margin: auto;
   text-align: center;
@@ -167,7 +181,7 @@ body {
   display: none;
   position: relative;
   height: auto;
-  background-color: rgba(31, 31, 100, 0.623);
+  background-color: rgb(49, 51, 99);
 }
 
 .dropdown-content2 a {
@@ -217,13 +231,15 @@ body {
   margin-top: 20px;
 }
 
-.second_column{
+.first_column{
   border-right: 7px solid green;
   margin-top: -8px;
   margin-bottom: -20px;
 }
 
-@media only screen and (max-width:960px) {
+
+
+@media only screen and (max-width:1080px) {
   .navbar6 {
     display: block;
   }
@@ -234,7 +250,7 @@ body {
 }
 
 @media only screen and (max-width:767px) {
-  .second_column {
+  .first_column {
     border-right: none;
     border-top: 7px solid green;
     margin-top: auto;
@@ -243,7 +259,7 @@ body {
 }
 
 .site-title {
-  color: blue;
+  color: rgb(60, 63, 121);
   text-align: center;
   background-color: white;
 }

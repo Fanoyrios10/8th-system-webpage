@@ -52,6 +52,25 @@
   color: yellow;
 }
 
+.two_side_stripe_home{
+  height: 550px;
+  width: 100%;
+  background-color: red;
+}
+
+.two_side_stripe_home_left{
+  padding: 10px;
+  width: 48%;
+  float: left;
+}
+.two_side_stripe_home_right{
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  color: white;
+  float: right;
+}
+
 #home_cluster_2{
   display: none;
 }
