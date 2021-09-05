@@ -230,6 +230,11 @@ let showSideNavNew = JSON.parse(window.sessionStorage.getItem("showSideNavNew"))
 function showSideNavOnLoad() {
   let first_column = document.querySelector(".first_column");
   let second_column = document.querySelector(".second_column")
+  let pageName = document.querySelector(".page_name")
+  if (pageName.value == 'calendar'){
+    showSideNavNew = true;
+    showSideNavButton.disabled = "disabled"
+  }
   if (!showSideNavNew) {
     showSideNav = false;
     sessionStorage.setItem("showSideNavNew", JSON.stringify(showSideNav));

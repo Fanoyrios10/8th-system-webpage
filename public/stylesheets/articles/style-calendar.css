@@ -1,0 +1,67 @@
+.calendar_date_row {
+  height: 200px;
+}
+
+table {
+  table-layout: fixed;
+}
+
+.date_number {
+  float: right;
+  height: 35px;
+  width: 35px;
+  background-color: brown;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.calendar_month_header {
+  text-align: center;
+  color: green;
+}
+
+.previous_after_month {
+  background-color: antiquewhite;
+}
+
+.previous_after_month_number {
+  background-color: burlywood;
+}
+
+.event {
+  clear: both;
+  display: block;
+  font-size: 13px;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  line-height: 14px;
+  background: #e4f2f2;
+  border: 1px solid #b5dbdc;
+  text-decoration: none;
+}
+
+.event_cubs {
+  background: #FFC107;
+}
+
+.event_scouts {
+  background: #198754;
+}
+.event_ranked{
+  background: #ca4040;
+  color: white;
+}
+
+.event_ranked a{
+  color: white;
+}
+
+.event_desc {
+  margin: 3px 0 7px 0;
+  text-decoration: none;
+  text-align: center;
+}
