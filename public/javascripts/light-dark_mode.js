@@ -309,7 +309,7 @@ showSideNavButton.addEventListener('click', function () {
     sessionStorage.setItem("showSideNavNew", JSON.stringify(showSideNav));
     first_column.style.display = "block"
     second_column.classList.remove('col-md-12')
-    second_column.classList.add('col-md-8')
+    second_column.classList.add('col-md-9')
     showSideNavButton.firstChild.classList.remove('fa-eye')
     showSideNavButton.firstChild.classList.add('fa-eye-slash')
     showSideNavButton.title = 'Κρύψε την αριστερή πλαινή μπάρα'
@@ -317,7 +317,7 @@ showSideNavButton.addEventListener('click', function () {
     showSideNav = true;
     sessionStorage.setItem("showSideNavNew", JSON.stringify(showSideNav));
     first_column.style.display = "none"
-    second_column.classList.remove('col-md-8')
+    second_column.classList.remove('col-md-9')
     second_column.classList.add('col-md-12')
     showSideNavButton.firstChild.classList.remove('fa-eye-slash')
     showSideNavButton.firstChild.classList.add('fa-eye')
@@ -340,7 +340,7 @@ function showSideNavOnLoad() {
     sessionStorage.setItem("showSideNavNew", JSON.stringify(showSideNav));
     first_column.style.display = "block"
     second_column.classList.remove('col-md-12')
-    second_column.classList.add('col-md-8')
+    second_column.classList.add('col-md-9')
     showSideNavButton.firstChild.classList.remove('fa-eye')
     showSideNavButton.firstChild.classList.add('fa-eye-slash')
     showSideNavButton.title = 'Κρύψε την αριστερή πλαινή μπάρα'
@@ -348,7 +348,7 @@ function showSideNavOnLoad() {
     showSideNav = true;
     sessionStorage.setItem("showSideNavNew", JSON.stringify(showSideNav));
     first_column.style.display = "none"
-    second_column.classList.remove('col-md-8')
+    second_column.classList.remove('col-md-9')
     second_column.classList.add('col-md-12')
     showSideNavButton.firstChild.classList.remove('fa-eye-slash')
     showSideNavButton.firstChild.classList.add('fa-eye')
