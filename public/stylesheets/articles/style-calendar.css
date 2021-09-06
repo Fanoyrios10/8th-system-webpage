@@ -17,6 +17,22 @@ table {
   padding-top: 5px;
 }
 
+.date_number_left{
+  height: 30px;
+  width: 30px;
+  padding-top: 2px;
+  float: left;
+}
+
+.date_small, .calendar_small_event{
+  height: 130px;
+  width: 100%;
+}
+
+.calendar_table_september_2021_small thead{
+  height: 20px;
+  width: 100%;
+}
 .calendar_month_header {
   text-align: center;
   color: green;
@@ -64,4 +80,24 @@ table {
   margin: 3px 0 7px 0;
   text-decoration: none;
   text-align: center;
+}
+
+.date_small{
+  width: 100px;
+}
+
+.calendar_table_small{
+  display: none;
+}
+
+@media only screen and (max-width:1040px) {
+  .calendar_table_small {
+    display: block;
+    width: 100%;
+    table-layout: auto;
+  }
+
+  .calendar_table_full {
+    display: none;
+  }
 }

@@ -36,6 +36,11 @@ darkLightModeButton.addEventListener("click", function () {
     siteTitle.style.color = "blue";
     if (pageName.value == 'index') {
       let gridItemTwoColumnArticle = document.getElementsByClassName('grid_item_two_column_article');
+      let homeArticles = document.querySelectorAll(".home_article");
+      homeArticles.forEach(e => {
+        e.classList.remove("bg-dark");
+        e.classList.remove('text-white');
+      });
       for (let i = 0; i < gridItemTwoColumnArticle.length; i++) {
         const element = gridItemTwoColumnArticle[i];
         element.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
@@ -55,6 +60,26 @@ darkLightModeButton.addEventListener("click", function () {
       singleTextArea.style.backgroundColor = 'white';
       singleTextArea.style.color = 'black';
       contactUsImage.src = '/images/contact_us/contact-us-1908763_1920.png'
+    } else if (pageName.value == 'calendar_2021_2022') {
+      let calendarTableFull = document.querySelectorAll('.calendar_table_full');
+      let calendarTableSmall = document.querySelectorAll('.calendar_table_small')
+      let calendarMonth = document.querySelector("#calendar_month");
+      calendarMonth.style.backgroundColor = 'white'
+      calendarMonth.style.color = 'black'
+      calendarTableFull.forEach(e => {
+        e.classList.remove('table-dark')
+      });
+      calendarTableSmall.forEach(e => {
+        e.classList.remove('table-dark')
+      });
+    }else if(pageName.value == 'scout_group_annoncements'){
+      let gridItemTwoColumnArticle = document.getElementsByClassName('grid_item_two_column_article');
+      let gridContainerTwoColumnArticle = document.querySelector('.grid_container_two_column_article');
+      gridContainerTwoColumnArticle.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+      for (let i = 0; i < gridItemTwoColumnArticle.length; i++) {
+        const element = gridItemTwoColumnArticle[i];
+        element.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+      }
     }
   } else {
     darkMode = true;
@@ -80,6 +105,11 @@ darkLightModeButton.addEventListener("click", function () {
     siteTitle.style.color = "red";
     if (pageName.value == 'index') {
       let gridItemTwoColumnArticle = document.getElementsByClassName('grid_item_two_column_article');
+      let homeArticles = document.querySelectorAll(".home_article");
+      homeArticles.forEach(e => {
+        e.classList.add("bg-dark");
+        e.classList.add('text-white');
+      });
       for (let i = 0; i < gridItemTwoColumnArticle.length; i++) {
         const element = gridItemTwoColumnArticle[i];
         element.style.backgroundColor = 'rgb(32, 32, 32)';
@@ -99,6 +129,26 @@ darkLightModeButton.addEventListener("click", function () {
       singleTextArea.style.backgroundColor = 'rgb(32, 32, 32)';
       singleTextArea.style.color = 'white';
       contactUsImage.src = '/images/contact_us/contact-us-1908763_1920_dark.png'
+    } else if (pageName.value == 'calendar_2021_2022') {
+      let calendarTableFull = document.querySelectorAll('.calendar_table_full');
+      let calendarTableSmall = document.querySelectorAll('.calendar_table_small');
+      let calendarMonth = document.querySelector("#calendar_month");
+      calendarMonth.style.backgroundColor = 'rgb(32, 32, 32)'
+      calendarMonth.style.color = 'white'
+      calendarTableFull.forEach(e => {
+        e.classList.add('table-dark')
+      });
+      calendarTableSmall.forEach(e => {
+        e.classList.add('table-dark')
+      });
+    }else if(pageName.value == 'scout_group_annoncements'){
+      let gridItemTwoColumnArticle = document.getElementsByClassName('grid_item_two_column_article');
+      let gridContainerTwoColumnArticle = document.querySelector('.grid_container_two_column_article');
+      gridContainerTwoColumnArticle.style.backgroundColor = 'rgb(32, 32, 32)';
+      for (let i = 0; i < gridItemTwoColumnArticle.length; i++) {
+        const element = gridItemTwoColumnArticle[i];
+        element.style.backgroundColor = 'rgb(32, 32, 32)';
+      }
     }
   }
 })
@@ -134,6 +184,11 @@ function darkLighModeOnLoad() {
     siteTitle.style.color = "blue";
     if (pageName.value == 'index') {
       let gridItemTwoColumnArticle = document.getElementsByClassName('grid_item_two_column_article');
+      let homeArticles = document.querySelectorAll(".home_article");
+      homeArticles.forEach(e => {
+        e.classList.remove("bg-dark");
+        e.classList.remove('text-white');
+      });
       for (let i = 0; i < gridItemTwoColumnArticle.length; i++) {
         const element = gridItemTwoColumnArticle[i];
         element.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
@@ -153,6 +208,26 @@ function darkLighModeOnLoad() {
       singleTextArea.style.backgroundColor = 'white';
       singleTextArea.style.color = 'black';
       contactUsImage.src = '/images/contact_us/contact-us-1908763_1920.png'
+    } else if (pageName.value == 'calendar_2021_2022') {
+      let calendarTableFull = document.querySelectorAll('.calendar_table_full');
+      let calendarTableSmall = document.querySelectorAll('.calendar_table_small')
+      let calendarMonth = document.querySelector("#calendar_month");
+      calendarMonth.style.backgroundColor = 'white'
+      calendarMonth.style.color = 'black'
+      calendarTableFull.forEach(e => {
+        e.classList.remove('table-dark')
+      });
+      calendarTableSmall.forEach(e => {
+        e.classList.remove('table-dark')
+      });
+    }else if(pageName.value == 'scout_group_annoncements'){
+      let gridItemTwoColumnArticle = document.getElementsByClassName('grid_item_two_column_article');
+      let gridContainerTwoColumnArticle = document.querySelector('.grid_container_two_column_article');
+      gridContainerTwoColumnArticle.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+      for (let i = 0; i < gridItemTwoColumnArticle.length; i++) {
+        const element = gridItemTwoColumnArticle[i];
+        element.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+      }
     }
   } else {
     darkMode = true;
@@ -176,6 +251,11 @@ function darkLighModeOnLoad() {
     siteTitle.style.color = "red";
     if (pageName.value == 'index') {
       let gridItemTwoColumnArticle = document.getElementsByClassName('grid_item_two_column_article');
+      let homeArticles = document.querySelectorAll(".home_article");
+      homeArticles.forEach(e => {
+        e.classList.add("bg-dark");
+        e.classList.add('text-white');
+      });
       for (let i = 0; i < gridItemTwoColumnArticle.length; i++) {
         const element = gridItemTwoColumnArticle[i];
         element.style.backgroundColor = 'rgb(32, 32, 32)';
@@ -195,6 +275,26 @@ function darkLighModeOnLoad() {
       singleTextArea.style.backgroundColor = 'rgb(32, 32, 32)';
       singleTextArea.style.color = 'white';
       contactUsImage.src = '/images/contact_us/contact-us-1908763_1920_dark.png'
+    } else if (pageName.value == 'calendar_2021_2022') {
+      let calendarTableFull = document.querySelectorAll('.calendar_table_full');
+      let calendarTableSmall = document.querySelectorAll('.calendar_table_small');
+      let calendarMonth = document.querySelector("#calendar_month");
+      calendarMonth.style.backgroundColor = 'rgb(32, 32, 32)'
+      calendarMonth.style.color = 'white'
+      calendarTableFull.forEach(e => {
+        e.classList.add('table-dark')
+      });
+      calendarTableSmall.forEach(e => {
+        e.classList.add('table-dark')
+      });
+    }else if(pageName.value == 'scout_group_annoncements'){
+      let gridItemTwoColumnArticle = document.getElementsByClassName('grid_item_two_column_article');
+      let gridContainerTwoColumnArticle = document.querySelector('.grid_container_two_column_article');
+      gridContainerTwoColumnArticle.style.backgroundColor = 'rgb(32, 32, 32)';
+      for (let i = 0; i < gridItemTwoColumnArticle.length; i++) {
+        const element = gridItemTwoColumnArticle[i];
+        element.style.backgroundColor = 'rgb(32, 32, 32)';
+      }
     }
   }
 }
@@ -231,7 +331,7 @@ function showSideNavOnLoad() {
   let first_column = document.querySelector(".first_column");
   let second_column = document.querySelector(".second_column")
   let pageName = document.querySelector(".page_name")
-  if (pageName.value == 'calendar'){
+  if (pageName.value == 'calendar') {
     showSideNavNew = true;
     showSideNavButton.disabled = "disabled"
   }
