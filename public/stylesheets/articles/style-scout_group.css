@@ -1,0 +1,56 @@
+.scout_group_article{
+  padding: 20px;
+  text-align: left;
+}
+
+.circle_box_article_scout_group{
+  background-color: blue;
+  color: white;
+}
+.hr_articles_scout_group{
+  border-top: blue solid 5px;
+}
+
+.comment_section_scout_group{
+  border: 5px solid blue;
+}
+
+.comment_section_scout_group_comment{
+  border-bottom: 5px dotted blue;
+}
+
+.gallery_scout_group_background {
+  border: 5px double blue;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+
+.gallery_scout_group {
+  transition: transform 1s;
+  margin: 10px;
+  display: inline-block;
+  background-color: blue;
+  border: 2px solid rgb(19, 16, 223);
+  width: 45%;
+}
+
+.gallery_scout_group:hover {
+  transform: scale(1.4);
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.gallery_scout_group img {
+  width: 100%;
+  max-height: 400px;
+}
+
+.desc_scout_group {
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  word-wrap: break-word;
+  color: white;
+}
