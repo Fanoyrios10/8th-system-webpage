@@ -9,6 +9,26 @@
   font-size: larger;
   color: rgb(182, 182, 36);
 }
+.summary_song_title_movement{
+  font-weight: bolder;
+  display: inline-block;
+  font-size: larger;
+  color: rgb(197, 24, 24);
+}
+
+.summary_song_title_prayers{
+  font-weight: bolder;
+  display: inline-block;
+  font-size: larger;
+  color: rgb(4, 0, 235);
+}
+
+.summary_song_title_scouts{
+  font-weight: bolder;
+  display: inline-block;
+  font-size: larger;
+  color: rgb(5, 136, 0);
+}
 
 .song_lyrics{
   font-family: Segoe Script;

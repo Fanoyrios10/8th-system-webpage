@@ -9,7 +9,6 @@ darkLightModeButton.addEventListener("click", function () {
   let body = document.querySelector("body");
   let mainBody = document.querySelector(".main-body");
   let siteTitle = document.querySelector(".site-title");
-  let first_column = document.querySelector(".first_column");
   let second_column = document.querySelector(".second_column")
   let pageName = document.querySelector(".page_name")
   let inputs = document.querySelectorAll("input")
@@ -158,7 +157,6 @@ function darkLighModeOnLoad() {
   let body = document.querySelector("body");
   let mainBody = document.querySelector(".main-body");
   let siteTitle = document.querySelector(".site-title");
-  let first_column = document.querySelector(".first_column");
   let second_column = document.querySelector(".second_column")
   let pageName = document.querySelector(".page_name")
   let inputs = document.querySelectorAll("input")
