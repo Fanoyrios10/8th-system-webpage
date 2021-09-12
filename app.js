@@ -20,6 +20,8 @@ var scoutGroupRouter = require('./routes/scout_group')
 var contactRouter = require('./routes/contact')
 var faqRouter = require('./routes/faq')
 var calendarRouter = require('./routes/calendar')
+var articlesCubs = require('./routes/articles_cubs')
+var articlesScouts = require('./routes/articles_scouts')
 
 var app = express();
 app.use(session({
@@ -50,6 +52,8 @@ app.use('/users', usersRouter);
 app.use('/confidential', confidentialRouter);
 app.use('/privacy', privacyRouter);
 app.use('/articles/scout_group', articlesScoutGroupsRouter);
+app.use('/articles/cubs', articlesCubs);
+app.use('/articles/scouts', articlesScouts);
 app.use('/articles/announcements', articleAnnouncementsRouter);
 app.use('/what-is', whatIsRouter);
 app.use('/register', registerRouter)
