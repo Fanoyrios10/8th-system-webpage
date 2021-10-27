@@ -9,10 +9,13 @@ router.get('/sinaji_ton_agion_xioy', function (req, res, next) {
   const query = 'SELECT * FROM scout_group_articles_comments WHERE article_id = 1';
   dbconnection.query(query, function (err, rows) {
     if(err) {
+      console.log(4);
+      console.log(err);
       res.render('articles/scout_group/sinaji_ton_agion_xioy', {
         message: req.params.message
       })
     }else{
+      console.log(6);
       res.render('articles/scout_group/sinaji_ton_agion_xioy', {
         comments: rows,
         message: ''
@@ -33,13 +36,14 @@ router.post('/scout_group_sinaji_ton_agion_xioy_comment_post/', function (req, r
       // NOT OK - Error!!!
       if (err) {
           console.log(err)
+          console.log(5);
           res.render('articles/scout_group/sinaji_ton_agion_xioy', {
             comments: rows,
             message: 'Η εισαγωγή του σχολίου απέτυχε'
           });
       }
       else {
-          res.redirect('articles/scout_group/sinaji_ton_agion_xioy');
+          res.redirect('sinaji_ton_agion_xioy');
       }
   });
 });
